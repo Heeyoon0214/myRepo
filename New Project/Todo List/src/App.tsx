@@ -7,6 +7,9 @@ function App() {
   const string2: string = "testing";
   const number1: number = 1;
   const number2: number = 2;
+  const Do: boolean = true;
+  const undo: boolean = false;
+
   function plus(a: number, b: number) {
     return a + b;
   }
@@ -23,6 +26,10 @@ function App() {
       {plus(number1, number2)}
       <br />
       {add(string1, string2)}
+      <br />
+      {Do}
+      <br />
+      {undo}
     </div>
   );
 }
