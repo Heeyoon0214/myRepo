@@ -21,7 +21,34 @@ function App() {
   }
 
   let x: [string, number];
-  x = ["hello", 10]; // 가능
+  x = ["hello", 10];
+
+  enum Color1 {
+    Red,
+    Green,
+    Blue,
+  }
+  let colorName1: string = Color1[2]; // colorName1 = Blue
+
+  enum Color2 {
+    Red = 2,
+    Green,
+    Blue,
+  }
+  let colorName2: string = Color2[3]; // colorName2 = Green
+
+  let notSure: any = 4;
+  notSure = "문자열일수도 있다";
+  notSure = false;
+
+  let list: any[] = [1, true, "free"];
+
+  function warnUser(): void {
+    alert("This is my warning message");
+  } // void 는 반환이 없는 함수, 변수는 undefined거나 null이다.
+
+  let u: undefined = undefined;
+  let n: null = null;
 
   return (
     <div>
