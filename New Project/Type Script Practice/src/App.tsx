@@ -50,6 +50,9 @@ function App() {
   let u: undefined = undefined;
   let n: null = null;
 
+  let someValue: any = "This is a string";
+  let strLength: number = (someValue as string).length;
+
   return (
     <div>
       {string1}
